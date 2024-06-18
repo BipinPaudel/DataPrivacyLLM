@@ -66,17 +66,29 @@ class Comment:
 class Profile:
     def __init__(
         self,
+        id: int,
+        concised_topics: str,
         username: str,
         comments: List[Comment],
+        question: str,
         review_pii: Dict[str, Dict[str, Any]],
         predictions: Optional[Dict[str, Dict[str, Any]]],
         evaluations: Optional[Dict[str, Dict[str, Dict[str, List[int]]]]] = None,
     ) -> None:
+        self.id = id
         self.username = username
         self.comments = comments
+        self.question = question
+        self.parsed_output_baseline = None
+        self.model_response_baseline = None
+        self.parsed_output_evaluation = None
+        self.model_response_evaluation = None
         self.num_comments = len(comments)
         self.review_pii = review_pii
         self.predictions = predictions if predictions is not None else {}
+        self.sanitized_response = None
+        self.sanitized_response_list = None
+        self.concised_topics = concised_topics
         self.evaluations = (
             evaluations if evaluations is not None else {}
         )  # model -> evaluator -> type -> List[int]
@@ -115,12 +127,20 @@ class Profile:
 
     def to_json(self) -> Dict[str, Any]:
         return {
+            "id": self.id,
             "username": self.username,
+            "question": self.question,
             "comments": [comment.to_json() for comment in self.comments],
             "num_comments": self.num_comments,
             "reviews": self.review_pii,
             "predictions": self.predictions,
             "evaluations": self.evaluations,
+            "parsed_output_baseline": self.parsed_output_baseline,
+            "model_response_baseline": self.model_response_baseline,
+            "parsed_output_evaluation":self.parsed_output_evaluation,
+            "model_response_evaluation":self.model_response_evaluation,
+            "sanitized_response": self.sanitized_response,
+            "concised_topics": self.concised_topics
         }
 
     @classmethod

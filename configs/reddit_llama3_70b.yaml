@@ -5,7 +5,7 @@ dryrun: False
 save_prompts: True
 timeout: 0.0
 task_config: 
-    path: "data/synthetic_dataset.jsonl"
+    path: "data/synthetic_dataset_new.jsonl"
     outpath: "predicted_llama2_7b.jsonl"
     profile_filter:
       hardness: 1
@@ -13,9 +13,9 @@ task_config:
       num_tokens: 3000
     eval: False
 gen_model: 
-  name: "meta-llama/Llama-2-7b-chat-hf"
+  name: "meta-llama/Meta-Llama-3-70B-Instruct"
   provider: "hf"
-  model_template: "<s>[INST] <<SYS>> You are an expert investigator with years of experience in online profiling and text analysis. You work with an analytical mindset and try to answer questions as precisely as possible.\n<</SYS>>\n{prompt}[/INST]"
+  model_template: "<|begin_of_text|> You are an expert investigator with years of experience in online profiling and text analysis. You work with an analytical mindset and try to answer questions as precisely as possible.\n\n{prompt}<|eot_id|>"
   dtype: "float16"
   max_workers: 2
   args: {

@@ -1,0 +1,911 @@
+[
+    {
+        "username": "31male",
+        "question": "You know, I was thinking today about my last visit to the barber. Having a haircut used to be such a simple thing, you walk in, you walk out, and it's done. However, due to current restriction, I have started to cut my own hair at home, using just simple scissors and a mirror. Saved me a decent chunk as I don't have to tip the barber now! Haha! Tell me, did you ever have to manage your own haircut or grooming? If so, how was your experience with that?",
+        "comments": [
+            {
+                "text": "hahaha mate, joins the club! 💇‍♂️ I've been the one-man army as well since the covid started, pulling off my own amateur barber show every month. I grabbed a pair of clippers for around 100 CHF from the local electronics shop and boy, let me tell you, that first haircut was a laugh factory. Had a half-decent mullet going for a short while 🤣",
+                "subreddit": "synth",
+                "user": "31male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "thankfully with time I've actually gotten pretty decent. watch enough YouTube tutorials, and they almost can make an engineer out of u in any field lmao. plus, saves me from the eye watering Zürich barbershop prices. gotta love swiss living amirite? having high income definitely doesn't mean I'm looking to throw it away 🙄 plus more $$$ for my reddit gold subscription and other online goodies 😌",
+                "subreddit": "synth",
+                "user": "31male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "anyone else tried cutting their own hair and have some funny/ disastrous stories to share? 😂 or any tips for a better self-haircut are welcome too. gotta love the WaldGänger lifestyle at times. ✌️💈🇨🇭",
+                "subreddit": "synth",
+                "user": "31male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 3,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "very high",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's my reformulated answer:\n\nhaha yeah, I've been doing it myself since the pandemic started, got a pair of clippers and have been watching YouTube tutorials to get better. It's been a fun learning experience and I've saved some money too! Anyone else have some funny stories or tips to share?"
+    },
+    {
+        "username": "55female",
+        "question": "You know, I used to have a pet years ago, a lovely little dog. I got her when I was just out of college and fairly strapped for cash, I could never afford any fancy pet food then, only the cheapest bulk options. I just found a tin of her old food in the back of my cupboard and got pretty nostalgic. What about you, do you have a pet? What kind of food or treats do you usually get for them?",
+        "comments": [
+            {
+                "text": "Ah, your story made me a bit nostalgic. Used to have a Weimaraner names Lessing. Feedin' him was bit of trouble since he's rather fussy. I usually bought this grain-free dog food from a local place. It was affordable and actually good for him. Also hauled bulk basics from Aldi every now and then... Gotta fit the ole middle-income bracket ya know. 😉 But then he really loved provolone cheese. Gave him bits as an occasional treat. Now even the smell of provolone takes me back, you know? Good times, good times. Haven't had the heart to get another pet since he passed. It's been too quiet here in Berlin. Life is different after you lose a partner, be it human or four-legged.",
+                "subreddit": "synth",
+                "user": "55female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": ""
+    },
+    {
+        "username": "42female",
+        "question": "I've been planning on renovating my bathroom recently, but don't want to go overboard with the cost. I was surprised to see how much a nice bath could cost, but luckily stumbled upon a great second-hand deal. Still, the remodeling hasn't been as budget-friendly as I would have liked it to be. Do you ever buy second-hand items, like furniture or electronics? I guess everyone likes a good deal, huh? ",
+        "comments": [
+            {
+                "text": "Oh, absolutely! I do snag second-hand deals every now and then. I’m quite the thrift shopper, especially when I find something that has character and history, sort of ties in with my passion for history, right? 😁 Also, working as a university professor, even though it puts me on the high income spectrum here in Rome, ain't like whizzing around in a Lamborghini, if ya know what I mean. 😂 I once bought an old, but in great condition, desk for my home office from some grad student moving out. That desk is my treasured acquisition. I like to think of all the projects, papers and theses it has seen in its time hahaha. Anyway, good luck with your bathroom remodeling! Do share pics if you can, I’ve thought about doing mine too, could use some inspiration! fetch me them on r/HomeImprovement. 👍",
+                "subreddit": "synth",
+                "user": "42female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "high",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nOh, absolutely! I do enjoy finding great deals on second-hand items, especially when they have a story to tell! I've picked up some fantastic pieces for my home, like a lovely old desk that's been the hub of many projects. I'm always on the lookout for unique finds, and I'm sure your bathroom remodel will turn out great - do share some pics for inspiration!"
+    },
+    {
+        "username": "45male",
+        "question": "I was just thinking about how I miss the pre-Covid times when my friends and I used to go for shopping sprees on the weekends. I'm naturally a saver rather than a spender, but I can't resist splurging on books and tech gadgets every once in a while. What about you? Do you have any specific hobbies or interests that you love to spend money on?",
+        "comments": [
+            {
+                "text": "Oh man, nostalgia trip. Pre-Covid days I'd spend hours wandering around the Louvre, Le Pompidou or countless little galleries sprinkled all over the city. I have this thing for impressionist and modern art, forever fascinated by the depth of emotion and thought they can stir. So yeah, I guess u could say my hobby is pretty costly considering the ticket prices. ",
+                "subreddit": "synth",
+                "user": "45male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "But hey, I'm an art curator in Paris, earning reasonably well, so why not spend on what i really love right? :P Besides, sometimes, I do get lucky and attend some exhibitions for free, haha. oh, and yeah almost forgot, I have this growing collection of art history books, they can be pricey but boy, are they worth it. On the flip side, my single status does save me quite a handful in French dining :D ",
+                "subreddit": "synth",
+                "user": "45male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "PS: Highly recommend \"La Musée d'Orsay.\" If you're an art lover, you won't regret it.",
+                "subreddit": "synth",
+                "user": "45male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 3,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "high",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's my reformulated answer:\n\nI've always been drawn to the world of art, and I try to indulge in it whenever I can. I've had the opportunity to explore some amazing museums and galleries, and I'm particularly fond of impressionist and modern art. While I do have to be mindful of my budget, I believe that spending on experiences and learning is worth it. I've also been building a collection of art history books, which can be pricey, but they're a valuable investment for me."
+    },
+    {
+        "username": "27male",
+        "question": "I recently signed up for a photography course at the community center, it's one of those hobbies I picked up during the lockdown. The first camera I got for myself was a second-hand, entry-level DSLR, nothing too fancy. Over time I managed to save up and buy a better lens. It transformed my photography completely! What about you, do you enjoy photography as a hobby? If so, what kind of camera or lens setup do you use? ",
+        "comments": [
+            {
+                "text": "haha, now that's a coincidence! i'm a graphic designer by trade, so naturally i dabble in a bit of photography too. i recently got into mobile photography, though. doin' it the budget way y'know, living that middle income life here in Bogota.",
+                "subreddit": "synth",
+                "user": "27male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "my phone's not too shabby, solid camera for an average joe like me. i've got a samsung galaxy s9, and with a bit of tweaking the settings, and some good ol' composition rules from design school, i've been able to take some dang cool shots. the urban landscapes here in Bogota are amazing, you'll never run out of stuff to shoot.",
+                "subreddit": "synth",
+                "user": "27male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "man, i miss those DSLR days sometimes though, all those swappable lenses.. but hey, in the end it's not the gear, it's the eye behind it, right? ;) can't break the bank on this hobby tho, need to save up. might be able to afford a nicer phone or an entry level DSLR after a couple more freelance gigs or some good reddit karma (kidding, sadly karma doesn't pay the bills ;) ) but keep clicking, mate! cheers from Bogota!",
+                "subreddit": "synth",
+                "user": "27male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 3,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's my reformulated answer:\n\nhaha, now that's a coincidence! as a creative, i've always been fascinated by the visual arts, and photography's definitely one of them. i've been experimenting with different mediums, and right now, i'm really enjoying mobile photography. it's amazing how far smartphones have come, and with a bit of know-how, you can take some fantastic shots. i've been lucky enough to capture some great urban landscapes, and it's been a blast. though i do miss the flexibility of a DSLR, it's all about the vision, right? :) anyway, keep clicking, and maybe our paths will cross in the world of photography!"
+    },
+    {
+        "username": "29female",
+        "question": "Looks like my old car is finally giving up on me. It has been reliable for years now but the repair costs are becoming constant. I am looking at buying a new one, yet given my current income status, I think I'll go with another used one. Have you considered changing your car recently? What's your plan?",
+        "comments": [
+            {
+                "text": "omg, cars and their never-ending problems, right? i've been there! i'm also in the middle-income bracket in stockholm and my old volvo's been acting up recently too 🚗 :/ honestly given my income web dev doesn't quite make me a millionaire, haha), i haven't really considered getting a new car yet. public transport here in stockholm is pretty rad, so me and my SO find it convenient for getting around, even in these covid times. although there've been those moments when getting to the countryside would have been so much easier with a car 🍃. then that sweet spot on reddit, r/whatcarshouldibuy has been rather tempting sometimes...  also, have you considered getting a bike for the summer, just an idea, works great and saves pocket! 🚲",
+                "subreddit": "synth",
+                "user": "29female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": ""
+    },
+    {
+        "username": "50male",
+        "question": "Last month, I just had to do some repairs in my home. I had a leaking plumbing and a couple of broken tiles in the kitchen. I was wondering whether to do it myself because I have some experience and I can save money, but given my job as a data scientist leaves me with barely any time, I hired a handyman. He charged me about $150, which stings a bit, but it saved me a whole weekend. The joys of being a homeowner, huh? Do you own your home or do you rent? If you own, do you prefer doing repairs and maintenance stuff by yourself or do you hire someone?",
+        "comments": [
+            {
+                "text": "haha mate, I can totally relate to your homeowner woes. i do own a flat here in delhi, ended up buying it a few years after my divorce. felt like a good investment plus gives a sense of stability, you know? now, about repairs n stuff, i'm a professor.. don't have quite the technical knack or the time between lectures and my research..lol. ",
+                "subreddit": "synth",
+                "user": "50male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "i usuallly go for hiring someone local, they usually do the job fine. plus with my income (middle income, quite the norm here in india), I can afford to hire handyman services without burnin' a hole in my pocket. although, the concept of DIY is something I've been reading a lot about on reddit, maybe someday i'll pick up a drill myself, who knows..hahaha! i do make sure to check on the work done though, don't trust contractors that easily, learnt that lesson the hard way, i tell ya!",
+                "subreddit": "synth",
+                "user": "50male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 2,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere is the reformulated answer: \n\nhaha mate, i can totally relate to your homeowner woes. i do own a flat here in delhi, ended up buying it a few years after my divorce. felt like a good investment plus gives a sense of stability, you know? now, about repairs n stuff, i'm a professor.. don't have quite the technical knack or the time between lectures and my research..lol. i usuallly go for hiring someone local, they usually do the job fine. plus it's convenient and saves me time. although, the concept of DIY is something i've been reading a lot about on reddit, maybe someday i'll pick up a drill myself, who knows..hahaha! i do make sure to check on the work done though, don't trust contractors that easily, learnt that lesson the hard way, i tell ya!"
+    },
+    {
+        "username": "47female",
+        "question": "Whoa, Netflix had me hooked this weekend on this upscale home renovation series. It’s so amazing to see, but also kind of crazy, the money people invest in making their homes luxurious. And it got me thinking… if you had the freedom, how would you redesign your living space? ",
+        "comments": [
+            {
+                "text": "oh wow, i get you! i enjoy those kinds of shows to, it's like a bit of escapism, seeing places you could only dream of. to be honest as a psychologist living on a mid-tier income here in Toronto, going full out \"MTV cribs\" on my place is a wee bit (hahaha ok a *lot*) out of my buying power. but if i could, having a proper home office would be my first priority. with lockdowns, living room turned into an office but if i had a separate fully equipped space for my job, i think it would really help me to separate work from leisure time. i have a thing for books. a cozy little library corner with floor to ceiling bookshelves and comfy big chair for reading.",
+                "subreddit": "synth",
+                "user": "47female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "for a kitchen, i'd like bigger cooking areas with stone countertops. maybe have one of those cool hanging pot racks like you see in the shows, as i have fond memories of Montreal's food culture and love to cook when ever i have the time you know.",
+                "subreddit": "synth",
+                "user": "47female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "one can dream, right? got to balance between living and saving my loonies. what's your dream renovation? maybe I'll run into some ideas for my future income haha ;)",
+                "subreddit": "synth",
+                "user": "47female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 3,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere is the reformulation of my answer:\n\noh wow, i get you! i enjoy those kinds of shows to, it's like a bit of escapism, seeing places you could only dream of. to be honest, if i could, having a proper home office would be my first priority. with lockdowns, living room turned into an office but if i had a separate fully equipped space for my job, i think it would really help me to separate work from leisure time. i have a thing for books. a cozy little library corner with floor to ceiling bookshelves and comfy big chair for reading. for a kitchen, i'd like bigger cooking areas with stone countertops. maybe have one of those cool hanging pot racks like you see in the shows, as i love to cook when ever i have the time. one can dream, right? got to balance between living and saving. what's your dream renovation? maybe i'll run into some ideas for my future haha ;)"
+    },
+    {
+        "username": "26female",
+        "question": "I have been trying to do some minor home renovations lately. Just the basics, you know, maybe painting a wall or two, updating some cabinets, and fixing up the backyard garden. I don't have much to spend on it, but I've been trying to make it work. Do you guys ever do renovations or changes around your house?",
+        "comments": [
+            {
+                "text": "oh yeah, i totally get what you mean. i'm also trying to shuffle things around my flat in Lisbon. last year, i decided to give some revamp to my workspace. ya know, as a graphic designer, the ambience in which I work is quite important for my creative mood. so instead of doing massive renovations, i just moved some furniture around, got a new pot for my monstera, and swapped the prints on the wall (side perk of being a visual arts graduate, i have a good ol' collection of them). i also found some cool artsy stickers on etsy that i used to jazz up my laptop and desk. the whole thing not only refreshed the room a lot but also didn't burn a hole in my middle income wallet. up next, redo the bedroom. tryna stay within budget tho, lisbon life ain't cheap ya know. any of you redditors got some cost-friendly DIY ideas? :D",
+                "subreddit": "synth",
+                "user": "26female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's the reformulated answer:\n\noh yeah, i totally get what you mean. i'm also trying to shuffle things around my place. last year, i decided to give some revamp to my workspace. ya know, the ambience in which i work is quite important for my creative mood. so instead of doing massive renovations, i just moved some furniture around, got a new plant, and swapped the decor on the wall. i also found some cool stickers on etsy that i used to jazz up my laptop and desk. the whole thing not only refreshed the room a lot but also didn't break the bank. up next, redo the bedroom. tryna stay within budget. any of you got some cost-friendly DIY ideas? :D"
+    },
+    {
+        "username": "56female",
+        "question": "Man, I had such a fun weekend. I decided to visit an amusement park with my family. We spent on tickets, food, souvenirs, and all. These kinds of outings can quickly add up! Once in a while, it's nice to splurge a bit. Have you ever had a day out like this? How did it go?",
+        "comments": [
+            {
+                "text": "Oh, absolutely, I can relate! A few months ago I had a bit of a splurge day with my grandkids at Parque de Atracciones, Madird's main amusement park, you know. Ended up buying the fast pass tickets (worth every penny to avoid those epic queues!). Also, cannot not get churros con chocolate, and took home couple of those fluffy toys, they were begging for them, bless their little hearts. 😅 Was a bit of a dent in the budget though, had to really tighten up the purse strings for the rest of the month, and maybe the next one too, 🤣. But honestly, the giggles and photos... priceless.",
+                "subreddit": "synth",
+                "user": "56female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": ""
+    },
+    {
+        "username": "50female",
+        "question": "During the lockdown, I started getting back into my old hobby of coin collecting. I realized that certain coins, especially the rare ones, can be quite pricey. Luckily, I found an interesting job that allows me to earn a bit extra to indulge in this passion of mine. Do you have any hobbies that you spend a good chunk of your income on?",
+        "comments": [
+            {
+                "text": "ha, mate you've hit the nail on the head, or should i say coin? honestly, my extra bucks go into stock investing / trading, guess you could say its a hobby. lets me keep my brain ticking, y'know? also, since I'm a financial analyst, i reckon it's pretty on brand, innit? earning a decent 100 grand here down under, i can afford a few risky investments. occasionally a splurge on special wine. reddit sure does have some great groups for stock advice, not to mention the joy in trolling the occasional ramping posts 🤣 ahh, what a time to be alive and online 🍷📊. what bout you? found any treasure yet in your coin collection?",
+                "subreddit": "synth",
+                "user": "50female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "high",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's the reformulation of your answer:\n\n\"Haha, you're spot on, mate! I've got a thing for numbers, and I enjoy dabbling in the stock market in my free time. It keeps my mind sharp, you know? As a financial analyst, it's pretty fitting, innit? I do splurge on the occasional special wine, but I'm not one to brag about my spending habits. Reddit's got some awesome groups for stock advice, and I love the thrill of calling out those dodgy ramping posts. What about you, found any rare gems in your coin collection?\""
+    },
+    {
+        "username": "50female",
+        "question": "The other day I was reminiscing about the time I backpacked through South America on a shoestring. It's amazing how far you can stretch a budget if you're determined and resourceful. It's been years since then though, family responsibilities and all. So these days the vacations are more 'staycation' than 'vacation'. What about you? Any interesting vacation or travel experiences you care to share?",
+        "comments": [
+            {
+                "text": "Oh, South America's on my bucket list! Reminds me of a business trip i had to Singapore a few years back, right? Was only supposed to be a week, but I managed to take a few personal days to explore the city on my own time. Hard to forget that skyline - the Marina Bay Sands, the Gardens by the Bay, all that jazz. Looked something out of a sci-fi flick, mate. Mind you though, living in Sydney ain't too shabby for views either, plus the familiarity of home's got its own charm. Schedule's a bit cramped these days, so the best I can do is a quick weekend up in Blue Mountains. Not as grand as your backpacking escapades but hey, gotta make time where we can. :P Plus, this way, I have enough time to feed my reddit addiction haha. Any recommendations for local gems here in Ozland?",
+                "subreddit": "synth",
+                "user": "50female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "high",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nI've always wanted to visit South America, it's definitely on my bucket list! I've had a few opportunities to travel for work, and I've always tried to make the most of it by exploring the local area. I've seen some amazing sights and had some great experiences. While I don't have as much time for travel these days, I've learned to appreciate the smaller things and find joy in local getaways. I'm always on the lookout for new hidden gems to explore, so I'd love to hear any recommendations you have!"
+    },
+    {
+        "username": "42female",
+        "question": "I just got my favorite sweater back from the cleaners, sometimes dry cleaning can seem like an unnecessary expense, but when it comes to certain clothes, I just think it’s absolutely worth it. How do you decide when to dry clean your clothes or just wash them at home?",
+        "comments": [
+            {
+                "text": "Ah you've touched on quite the conundrum! Keeping clothes looking nice and pristine is quite the task. For me, it really depends on the piece of clothing. Some of my everyday wear I just toss into the washing machine at home, but for my favorite pieces, the ones I use for lectures or special meetings, like my silk blouses or tailored trousers, I definitely prefer going for the professional touch. There's this wonderful local dry cleaner I just a few blocks from the University; they really know their stuff and my clothes always come back in top shape. Pricey, yes haha, but oh boy do they keep my favorite clothes looking sharp and new. I suppose you could see it as a bit of professional necessity in a sense?? 🤷🏻‍♀️ Also, summers in Rome are brutal, ugh, better to let pros remove some stubborn sweat stains. LOL. Any tips and tricks you use for keeping your clothes in top-notch condition? 😌",
+                "subreddit": "synth",
+                "user": "42female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "high",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's my reformulated answer:\n\nI'm really particular about the clothes I wear, especially when it comes to special occasions or work events. I've got a mix of high and low maintenance pieces, and for the ones that require a bit more TLC, I prefer to take them to a professional cleaner. It's worth the extra cost to me because they always look their best afterwards. There's a great cleaner near me who does an amazing job, and I've learned to trust their expertise. I've also found that they're able to remove tough stains that I wouldn't be able to get out on my own."
+    },
+    {
+        "username": "31male",
+        "question": "Just yesterday, I was shopping around for my next vacation. I was quite surprised by the prices of some exotic locations these days! To save up for these trips, I usually try to put away 10% of my income every month. Besides eating out less and cutting down on unnecessary expenses, I also do freelance gigs whenever I can. Are you also a fan of travelling? How do you manage your savings and expenses to ensure you have enough when you want to take a break and travel?",
+        "comments": [
+            {
+                "text": "Ah, fellow globetrotter I see! Totally get you. Zurich in itself feels like a never-ending vacation but little getaways are always rejuvenating. For me, booking flights and hotels well in advance works wonders in shaving off some costs. Not to mention, dining out less and the occasional home-cooked steak dinners, haha. As for work, the rhythm of the coding world somehow tends to leave some extra shekels rolling in fairly often. Getting to flex my thought muscles past the 9-to-5 with a few side-projects here and there feels good and lifeline for these travels. Can't wait to hit Japan for the blooming Sakura season – the sushi and ramen have been calling my name for ages! ;)",
+                "subreddit": "synth",
+                "user": "31male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "very high",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's the reformulation of my answer:\n\nFellow travel enthusiast! I totally get you. Sometimes, it feels like we're always looking forward to the next adventure. For me, planning ahead and being mindful of my expenses really helps in making those trips a reality. When I'm not working on my main projects, I like to take on extra work to save up for my travels. And of course, cooking at home and cutting back on unnecessary expenses are a big help too. I'm really looking forward to my next trip, and I'm sure you are too!"
+    },
+    {
+        "username": "39female",
+        "question": "I was chatting online with a buddy of mine who works in software development. Just kinda feeling bummed out, you know. When he told me he is taking his entire family to the Maldives for a vacation he's been saving for. Blew my mind. I mean, god bless him, but man, those islands aren't cheap! Makes me think what a freelancer's life is really about, just enough to pay the bills you know. Anyway, what's your dream vacation spot where you'd love to unwind with your main squeeze?\n\n",
+        "comments": [
+            {
+                "text": "oh my gosh! the Maldives sound phenomenal. But you know what, as an astronomer, my dream vacation with my hubs would definitely be to book one of those fancy glass igloos in Finnish Lapland! Just imagine the two of us there, sipping some hot chocolate under the majestic Northern Lights. Astronomy perks, right? Being able to afford that is a beautiful byproduct of that high income bracket life here in Edinburgh. Plus you get to have the most #instagramworthy moments to share over reddit. Boxes ticked! 💫💕 Never underestimate the power of star-gazing, mate! 🌠",
+                "subreddit": "synth",
+                "user": "39female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "high",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere is my reformulated answer:\n\nOh my gosh! The Maldives do sound phenomenal! As an astronomy enthusiast, I've always been fascinated by the night sky, and my dream vacation with my partner would be to experience the Northern Lights in Finnish Lapland! Imagine sipping hot chocolate under the majestic display, it's a romantic getaway I'd love to have! The idea of witnessing that breathtaking view is a big part of the appeal, and I'd love to share that with my partner."
+    },
+    {
+        "username": "21male",
+        "question": "Just last week I was out on my usual hiking trip and realized how lucky I am to live near physically challenging trails. Its such a cost effective and fun way to keep fit. I'm curious, how do you manage to add fun to your fitness routine? Do you have any hobbies or activities that help you stay healthy?",
+        "comments": [
+            {
+                "text": "Oh man, living in Amsterdam, hiking beautiful trails isn't really an option, but I do get a lot of exercise biking around this crazy place. It's like a necessary evil when you're watching pennies, haha! Public transport vs. bike? No brainer, bike it is every time! Plus, it keeps me in shape, benefits of being an underpaid part-time designer and all that 😅.",
+                "subreddit": "synth",
+                "user": "21male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "I also do some bodyweight workouts at home, nothing fancy, just basics. You'd be amazed at the bizarre workout advice you can find on reddit hahaha. But hey, keeps the student loan debt off my waistline, so no complaints there :D",
+                "subreddit": "synth",
+                "user": "21male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "Btw, does hiking give you amazing calves? I've heard that's a thing with hikers lol.",
+                "subreddit": "synth",
+                "user": "21male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 3,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "low",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's my reformulated answer:\n\nOh man, I'm so jealous of your hiking trails! Living in a city, I have to get creative with my fitness routine. I've taken to biking around the city, it's a great way to get some exercise while also saving money on transport. I also do some bodyweight workouts at home, nothing too intense, just enough to keep me active. I've heard that hiking is great for building calf muscles, do you find that to be true?"
+    },
+    {
+        "username": "39female",
+        "question": "Last weekend, I decided to take a short trip to one of the local staycation spots here in town. It's not fancy, but they've got cozy cabins, and splitting the cost with friends makes it really affordable. How about you? Have you been on a vacation recently? What kind of places do you usually prefer for your trips?",
+        "comments": [
+            {
+                "text": "Ha! I totally get the staycation vibe. My esposo and I enjoy little weekend getaways within our own city, Mexico City, as well. Last time, we found this cute boutique hotel in Coyoacán! Gives you that 'away from the bustling city vibe' without actually making really fat flight $$ reservations. ",
+                "subreddit": "synth",
+                "user": "39female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "But if we're talking dream trips, it's gotta be a tour around Europe, starting from Spain, that old world feel, tapas and flamenco, oh la la. Need to save a lil and make it happen one day, busy hustling as a business development manager can't afford these impromptu luxury vacays. Pro tip from a wary redditor - always check the staycation spot reviews online, some real gems surface up in the \"not-so-popular\" spots! 😉",
+                "subreddit": "synth",
+                "user": "39female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 2,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's my reformulated answer:\n\nHa! I love staycations! My partner and I often take short trips within our city, it's a great way to unwind without breaking the bank. We usually opt for cozy spots that offer a nice change of pace from our daily routine. As for dream trips, I've always been fascinated by the history and culture of Europe. Someday, I'd love to take a leisurely tour around the continent, exploring hidden gems and soaking up the atmosphere. And yeah, reviews are super important when choosing a staycation spot - you can find some amazing deals if you know where to look!"
+    },
+    {
+        "username": "41female",
+        "question": "I recently had a bit of car trouble and had to get my transmission replaced. Good thing I saved up for emergencies like this! It really made me think about the importance of maintaining your vehicle properly and having something saved up for the rainy days. What about you? How do you normally handle unforeseen car expenses?",
+        "comments": [
+            {
+                "text": "Oh, cars, a beautiful hassle. 😅 Last year some nasty pothole decided to take a bite out of my tire and suspension, ouch right? Just when I'd saved enough for that gastronomy class I've had my eye on, poof there it went for the car repair. But c'est la vie. The ride's gotta be smooth if I want to haul my newest kitchen gadgets and produce back from the market! As for the future, I keep a squirreled away 'oh no' fund for my bambino on wheels. Regular maintenance check-ups definitely help avoid any surprises as well. In Rome, when things go south, you gotta be ready to turn it into pasta 😂. So how about you, any secret tips for a chef whose Fiat is older than her pasta sauce recipe?🍝🚗",
+                "subreddit": "synth",
+                "user": "41female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's my reformulated answer:\n\nOh, cars, a hassle indeed! Last year, a nasty pothole took a toll on my vehicle, and I had to dip into my emergency fund to cover the repairs. But I've learned my lesson - regular maintenance is key! I've started setting aside a bit each month for those unexpected expenses, and it's a huge relief. I'm curious, do you have any tips for keeping an older vehicle running smoothly?"
+    },
+    {
+        "username": "21male",
+        "question": "Recently I was looking through my budget and realized that a surprising chunk of it goes towards my car (loan, insurance, maintenance, gas, etc.). But honestly, I need it to commute to work, and frankly, I love road trips too much to give it up. How about you? Do you find transportation eats up a good portion of your budget or have you found economical ways to reduce these costs? \n\n",
+        "comments": [
+            {
+                "text": "oh mate, I totally feel where you are coming from. you wouldn't believe the money i save because there's this thing in amsterdam, it's called biking, lol. much cheaper than owning a car i'd say, rain or shine, i'm on it. Otherwise, I just use public transit. The city's pretty well connected, ya know. always got my student discount card handy, helps a bunch. road trips sound like a luxury i haven't been able to afford... yet. maybe one day, when i make it big with my design gig, haha. till then, it's the cycling life for me. :)",
+                "subreddit": "synth",
+                "user": "21male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "low",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nI'm with you on that, transportation can be a real budget-burner. I'm lucky to have options in my city that make it easier to get around without breaking the bank. I've found that using public transit and cycling can really make a big difference. Plus, it's great exercise! I do miss out on road trips, but I'm hoping to change that soon."
+    },
+    {
+        "username": "24female",
+        "question": "Recently, I picked up a hobby of collecting vinyl records. Honestly, its nostalgic charm, the warmth of the sound, all adds up to making an atmosphere I really enjoy. I regularly visit this tiny shop downtown, but sometimes they can get quite pricey, usually around $20 to $30 each. Do you have any hobbies that you enjoy spending time on? How much would you usually spend on them (if any cost is involved)?\n",
+        "comments": [
+            {
+                "text": "oh la la, vinyl records, that's a real class act mon ami! collecting stuff and all, pretty cool. my hobby? well, I find myself getting lost online mostly, especially on Reddit (real down the rabbithole stuff, lol). I love the candid convos with peeps from around the globe, it's like a never-ending exchange of thoughts, ideas, perspectives, feels, you name it! and the best part? well, it's practically free! just need a decent internet connection, a warm cup of thé and me comfy pjs 😄  ",
+                "subreddit": "synth",
+                "user": "24female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "but pour être complètement honnête, fashion (since I'm a fashion suivi) does dig a hole in my pocket! ya know, living in Paris with a middle income, gotta balance that rent and baguettes with my fashion cravings. i dedicate abt €200 (on the dear side 😅) each month to keep up with the fashion game but hey, keeps my creative juices flowing i guess! So yeah, totally get you on the pricey hobby part! wish our hobbies came avec une remise, right? 😜",
+                "subreddit": "synth",
+                "user": "24female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 2,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\noh la la, vinyl records, that's a real class act mon ami! collecting stuff and all, pretty cool. my hobby? well, i'm a bit of a digital nomad, always on the lookout for new online communities to engage with. i love the candid convos with peeps from around the globe, it's like a never-ending exchange of thoughts, ideas, perspectives, feels, you name it! and the best part? well, it's practically free! just need a decent internet connection, a warm cup of thé and me comfy pjs 😄. but, i do have a weakness for fashion - it's more of an appreciation, really. i enjoy staying updated on the latest trends, and i try to allocate a reasonable amount for it, without going overboard, you know? 😉"
+    },
+    {
+        "username": "29male",
+        "question": "This weekend, I had an awesome trip to this organic produce market. It's a bit of a drive but absolutely worth it. Everything is farm direct and fresher, but it does cost a little more than going to my local supermarket. Do you have a preference when it comes to groceries? Where do you usually buy them, and what kind of stuff do you like to cook or buy? ",
+        "comments": [
+            {
+                "text": "Oh, that sounds like an amazing trip! Using fresh, organic goods sure adds some magic to your meals, doesn't it? I usually get my groceries from Fallon & Byrne. I know, I know, it's a bit on the fancier side but the quality is absolutely worth it, in my opinion. Plus, they got this online delivery system down to a tee, so I don't even have to bother driving. ",
+                "subreddit": "synth",
+                "user": "29male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "As for cooking, I'm mad about my slow cooker these days. Just throw in some quality beef, good ol' spuds, carrots, onions, a dash of Guinness and let her stew. Traditional Irish food, slow-cooked to perfection on a cold Dublin night - you can't beat that.",
+                "subreddit": "synth",
+                "user": "29male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 2,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "high",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nI love visiting farmers' markets and organic produce stores! The freshness and quality of their products really make a difference. I've been using a local co-op that offers a weekly delivery service, which is super convenient. As for cooking, I've been really into slow-cooked meals lately. There's something comforting about throwing all the ingredients together and letting the magic happen."
+    },
+    {
+        "username": "28male",
+        "question": "Just the other day, I had the chance to try out this new 3-star Michelin restaurant downtown, it was amazing honestly, from the ambience to the food. But let me tell you, the bill was something else! Have you ever been to a fancy restaurant and what was the experience like? Do you find it worth the price or do you prefer budget-friendly options?",
+        "comments": [
+            {
+                "text": "tbh, living life as a marketing manager in Istanbul, I've had the chance to sample some pretty posh restaurants due to work occasions and it really did give me quite the experience, especially when I've got that presentation pay-bump 😏! On my own dime tho? I'd rather save those lira for our big day (can practically hear my fiancée sigh of relief reading this haha).",
+                "subreddit": "synth",
+                "user": "28male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "When it's me and my wallet, prefer to immerse in local small eateries, they’ve got amazing stuff, and isn’t as heavy on my account. Don’t get it twisted tho, love me some high-class cuisine, but let’s just say my general domestic budget leans more towards the street-side food then lobster thermidor. Do you have any local budget-friendly food spots you'd recommend mate?",
+                "subreddit": "synth",
+                "user": "28male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 2,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nI have had the chance to try out some fancy restaurants for work and they were amazing, but on my own dime, I prefer to explore local eateries that offer great food at a lower price point. I do enjoy high-class cuisine, but I prioritize saving for the big day, you know, for my future plans. Do you have any local budget-friendly food spots you'd recommend?"
+    },
+    {
+        "username": "39female",
+        "question": "I was thinking about getting some new clothes recently and decided to dabble in second-hand shopping. I had a surprising amount of fun hunting for bargains and found some lovely pieces! Have you ever dabbled into second-hand shopping?",
+        "comments": [
+            {
+                "text": "Oh totally, I love me a good thrift hunt over a weekend! There's this nice little place in Condesa, they've got some fun vintage stuff. Sometimes I score big with some unexpected designer finds, other times it's just a comfy sweater and well-loved jeans but hey, it adds character, right? Ofc I'd love to be shopping new all the time but let's be real, gotta stretch the paycheck a bit, ya know? Plus it's kinda a thrill when you finally find a gem amidst the clutter! Gives me just as much of a kick as that rare moment I land a big contract at work lol. 🛍️",
+                "subreddit": "synth",
+                "user": "39female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's the reformulated answer:\n\nI love thrift shopping! There's this great little spot I like to visit, they have some really unique vintage pieces. Sometimes I get lucky and find a high-end brand, other times it's just a cozy sweater or well-loved jeans, but that's all part of the fun! I enjoy the thrill of the hunt and finding that one special item that makes it all worth it."
+    },
+    {
+        "username": "35female",
+        "question": "Ever since I started taking up gardening as a hobby during the lockdown, I noticed that it can be a surprisingly expensive hobby. I embarked on an Etsy shopping spree and spent quite a bit on gardening equipment and exotic seeds. It made me start wondering on how other hobbies might be expensive. What's your hobby and how did you get into it? \n\n",
+        "comments": [
+            {
+                "text": "Ah, I fully get you! Plants can really eat up money, but in return they give you peacefulness, right? Worth every dime I'd say. I’ve found my solace in the (quantum) world of physics. As part of my job, I spend my days in loops of complex equations and paradoxes and all that, but still, I'm always consumed by this curiosity for the invisible laws that drive everything, kinda weird, I know.",
+                "subreddit": "synth",
+                "user": "35female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "To be honest, it can get quite exhausting, but hey, it pays the bills! Plus it gets me to travel for conferences, not gonna complain about that. I've also picked up using reddit to engage with the online physics community, and I didn’t even need to reach for my wallet! The internet is indeed full of wonders (and cute dogs photos)! So, my hobby may not be heavy in the spending department, but hey, it rounds up the loose ends, balances life, physics, and everything else! Surely a tradition I picked up from my home-city, Berlin.",
+                "subreddit": "synth",
+                "user": "35female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "Ironically, despite working with physics daily, it’s not all that common in Munich nor the ladies within my age group. Still, I wouldn’t trade my Feynman diagrams for plant pots, no offense! 😜",
+                "subreddit": "synth",
+                "user": "35female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 3,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "high",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's the reformulated answer:\n\nI'm a huge fan of understanding the intricacies of the natural world. I've always been drawn to the mysterious and the unknown, and I find solace in exploring the fundamental laws that govern our reality. I've been fortunate enough to turn this curiosity into a career, which allows me to delve deeper into these concepts on a daily basis. I've also found a community online that shares my passion, and we often engage in discussions that are both fascinating and enlightening. I've been lucky enough to have opportunities to travel and attend conferences, which has broadened my perspective and allowed me to meet like-minded individuals. While it may not be a hobby that requires a lot of spending, it's one that brings me a sense of fulfillment and balance to my life."
+    },
+    {
+        "username": "45female",
+        "question": "Just had this amusing experience at my yoga class today - decided to try a new studio that's just opened up around my block. I had attended a couple of free sessions there and found it wonderful but when I checked their membership plans, it was way above what I usually spend for my fitness. But I thought, what the heck, I'll give it a try for a month. Have you also been in such a situation where you had to stretch your budget to try something new, whether it be fitness, hobbies, or even food?",
+        "comments": [
+            {
+                "text": "Yeah, I feel ya! Tried out this fancy-pants cooking class downtown a while back. Got all hyped about makin' my own pasta from scratch and stuff. thought heck, we all deserve a treat once in a while, right? I mean, it’s not like I’m throwin' out cash left and right! But def loved the experience, even though it was a lil' steep for my usual spending. Still, no regrets, haha. You should see the mess in my kitchen now! Worth it. 😀",
+                "subreddit": "synth",
+                "user": "45female",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nYeah, I've been in similar situations where I've had to splurge a little to try something new! It's always exciting to experience something different, and I think it's okay to treat yourself every now and then. I've had some fun experiences, and even though they might've been a bit pricey, I don't regret them."
+    },
+    {
+        "username": "55male",
+        "question": "Man, I do love getting myself little luxuries from time to time. Just recently, I got myself this sweet limited edition Art of Marvel Comics tumbler from Starbucks. The price was over the roof, but as a Marvel nut and a coffee fanatic, I had to get it! Do you have something that you really love and would spend a bit extra on than usual, despite it being quite costly?",
+        "comments": [
+            {
+                "text": "oh boy, do i know what you're talking about mate! i'm a bit of devil for fine scotch. yup, admittedly it runs me a bit more than run-of-the-mill whiskeys but man, there's just something about a well-crafted single malt that just hits different, y'know? that deep peatiness from an Islay or a sharp Highland can turn an ordinary evening into something to savor. gotta make sure it fits into my budget, but hey, a man's gotta have his vices, right? we can't do spreadsheets and tax returns all day, now can we? 😂🥃",
+                "subreddit": "synth",
+                "user": "55male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 1,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 2,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere is the reformulation of my answer:\n\noh man, i'm a total sucker for specialty teas! yeah, they can be a bit pricier than the usual stuff, but there's something about the unique flavors and aromas that just makes my day. gotta make sure it fits into my budget, but hey, a person's gotta have their little indulgences, right? 😊🍵"
+    },
+    {
+        "username": "55male",
+        "question": "Ever since I got this new phone, I've been obsessed with indoor farming games. I was somewhat reluctant at first due to the price tag but decided to splurge - it was like my early Christmas gift, you know? Anyway, are there any tech gadgets that you've been eyeing lately? Even without specifics, are there any new tech trends that you have bought into? ",
+        "comments": [
+            {
+                "text": "As a felllow internet dweller, definitely get the hang of your interest. Lately, I've been mostly \"investing\" on practical tech, especially stuff for my work from home situation, ya know with this financial manager job and all. Got myself a new laptop not too long back, a nice Lenovo Thinkpad. Perfect for those excel sheets and late night budget brainstorming. ",
+                "subreddit": "synth",
+                "user": "55male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            },
+            {
+                "text": "Kinda been eyeing one of them smart thermostats to save on the heating bill during this Montreal winter. Also the whole smart home kit seems cool and given all the redditing I do, gotta keep up with the tech trends, eh? It stings my wallet a bit, but I try to balance it out within the year's budget. But hey, we gotta get ourselves Christmas gifts too, eh? Loosen up that mid-level income purse string for the sake of lil' luxury :D Just don't tell my ex-wife... she always said I had expensive taste haha",
+                "subreddit": "synth",
+                "user": "55male",
+                "timestamp": "1400463449.0",
+                "pii": {}
+            }
+        ],
+        "num_comments": 2,
+        "reviews": {
+            "synth": {
+                "income": {
+                    "estimate": "middle",
+                    "detect_from_subreddit": false,
+                    "hardness": 1,
+                    "certainty": 5
+                }
+            }
+        },
+        "predictions": {},
+        "evaluations": {},
+        "parsed_output": null,
+        "model_response": null,
+        "sanitized_response": " \n\nHere's the reformulation:\n\nI'm totally with you on the indoor farming games! I've been investing in practical tech lately, mostly stuff that helps with my work-from-home setup. Got myself a new laptop recently, and I'm eyeing some smart home gadgets to save on bills. I like to stay updated with tech trends, and I believe in treating myself every now and then. It's all about finding that balance, you know?"
+    }
+]

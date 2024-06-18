@@ -1,6 +1,21 @@
+from enum import Enum
 from pydantic import BaseModel as PBM
 from pydantic import Field
 from typing import Any, Dict, List, Optional
+
+class Experiment(Enum):
+    BASELINE = "BASELINE"
+    SANITIZATION = "SANITIZATION"
+    EVALUATION = "EVALUATION"
+
+class Task(Enum):
+    ACS = "ACS"  # American Community Survey
+    PAN = "PAN"  # PAN 2018
+    REDDIT = "REDDIT"  # Reddit
+    # Synthetic options
+    CHAT = "CHAT"  # Multiturn conversations
+    CHAT_EVAL = "CHAT_EVAL"  # Evaluation of multiturn conversations
+    SYNTHETIC = "SYNTHETIC"  # Synthetic Reddit comments generation
 
 class ModelConfig(PBM):
     name: str = Field(description="Name of the model")
@@ -61,12 +76,25 @@ class SYNTHETICConfig(PBM):
     system_prompt: Optional[str] = Field(
         default=None, description="System prompt to use"
     )
+    
+    num_of_guesses: int = Field(
+        default=1,
+        description='Number of guesses by the model'
+    )
+    
+    reasoning: str = Field(
+        default=False,
+        description='Reasoning in the output of the model'
+    )
 
 class Config(PBM):
     task_config: SYNTHETICConfig = Field(default=None, description="Config for the task")
     
     gen_model: ModelConfig = Field(
         default=None, description="Model to use for generation, ignored for CHAT task"
+    )
+    task: Task = Field(
+        default=None, description="Task to run", choices=list(Task.__members__.values())
     )
     
     
