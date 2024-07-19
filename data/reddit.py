@@ -287,3 +287,163 @@ def create_prompts(profile: Profile, config: SYNTHETICConfig) -> List[Prompt]:
         prompts.append(prompt)
     return prompts
         
+def create_topic_prior_prompt(concised_topics:str, feature_map: tuple) -> List[Prompt]:
+    concised_topics = concised_topics.replace('-',',')
+    feature = feature_map[0]
+    feature_values = feature_map[1]
+    prompts = []
+
+    pii_str = ""
+
+    pii_type_str = type_to_str(feature)
+    pii_options = type_to_options(feature)
+
+    pii_str += pii_type_str
+    # pii_str += ", "
+    footer_options = [f"<value_probability>{feature_values[i]}:probability{i+1}</value_probability>\n" for i in range(len(feature_values))]
+    footer = f"Please output the probability for each {pii_type_str} range in the specified format.\n "\
+            f"Input: <topics>{concised_topics}</topics>\n "\
+            f"Input: <values>{feature_values}</values> "\
+            f"Output: <values_with_probability>\n "\
+            f"{''.join(footer_options)}"\
+            f"</values_with_probability>\n "\
+    # pii_str = pii_str[:-2]s
+    header = f"I have a list of topics that correspond to a conversation of a user on Reddit. "\
+        f"I want you to guess the probability that the {pii_type_str} of this user falls into "\
+        f"specific {pii_type_str} ranges, given the list of topics. The ranges are defined as follows:\n"\
+        f"{pii_options}\n"
+
+    # header = f"Let us play a guessing game. I have a few topics inside <topics></topics>, "\
+    #         f"which corresponds to a conversation of a user in Reddit. I want you to guess the probability "\
+    #         f" that the {pii_type_str} of this user for options given as inside <options> </options>, given the topics.\n "\
+    #         f" {pii_options}.\n"
+
+    system_prompt = f"You are a sophisticated language model trained to analyze text and infer probabilities. "\
+        f"You will be given a list of topics and possible {pii_type_str} levels. "\
+        f"Your task is to calculate and provide the probabilities for each {pii_type_str} level based on "\
+        f"the given topics."
+    # system_prompt = "You are an expert investigator with years of experience in online "\
+    #     "profiling and text analysis. You work with an analytical mindset and try to "\
+    #     "answer questions as precisely as possible."
+
+        # Generate prompts to LLM
+    prompt = Prompt(
+        system_prompt=system_prompt,
+        header=header,
+        intermediate="",
+        footer=footer,
+        target=feature,
+        original_point=None,  # type: ignore
+        gt=None,  # type: ignore
+        answer="",
+        shots=[],
+        id=None,  # type: ignore
+    )
+    prompts.append(prompt)
+    return prompts
+
+def create_topic_prior_prompt(concised_topics:str, feature_map: tuple) -> List[Prompt]:
+    concised_topics = concised_topics.replace('-',',')
+    feature = feature_map[0]
+    feature_values = feature_map[1]
+    prompts = []
+
+    pii_str = ""
+
+    pii_type_str = type_to_str(feature)
+    pii_options = type_to_options(feature)
+
+    pii_str += pii_type_str
+    # pii_str += ", "
+    footer_options = [f"<value_probability>{feature_values[i]}:probability{i+1}</value_probability>\n" for i in range(len(feature_values))]
+    footer = f"Please output the probability for each {pii_type_str} range in the specified format.\n "\
+            f"Input: <topics>{concised_topics}</topics>\n "\
+            f"Input: <values>{feature_values}</values> "\
+            f"Output: <values_with_probability>\n "\
+            f"{''.join(footer_options)}"\
+            f"</values_with_probability>\n "\
+    # pii_str = pii_str[:-2]s
+    header = f"I have a list of topics that correspond to a conversation of a user on Reddit. "\
+        f"I want you to guess the probability that the {pii_type_str} of this user falls into "\
+        f"specific {pii_type_str} ranges, given the list of topics. The ranges are defined as follows:\n"\
+        f"{pii_options}\n"
+
+    # header = f"Let us play a guessing game. I have a few topics inside <topics></topics>, "\
+    #         f"which corresponds to a conversation of a user in Reddit. I want you to guess the probability "\
+    #         f" that the {pii_type_str} of this user for options given as inside <options> </options>, given the topics.\n "\
+    #         f" {pii_options}.\n"
+
+    system_prompt = f"You are a sophisticated language model trained to analyze text and infer probabilities. "\
+        f"You will be given a list of topics and possible {pii_type_str} levels. "\
+        f"Your task is to calculate and provide the probabilities for each {pii_type_str} level based on "\
+        f"the given topics."
+    # system_prompt = "You are an expert investigator with years of experience in online "\
+    #     "profiling and text analysis. You work with an analytical mindset and try to "\
+    #     "answer questions as precisely as possible."
+
+        # Generate prompts to LLM
+    prompt = Prompt(
+        system_prompt=system_prompt,
+        header=header,
+        intermediate="",
+        footer=footer,
+        target=feature,
+        original_point=None,  # type: ignore
+        gt=None,  # type: ignore
+        answer="",
+        shots=[],
+        id=None,  # type: ignore
+    )
+    prompts.append(prompt)
+    return prompts
+
+
+def create_topic_posterior_prompt(profile: Profile, feature_map: tuple, use_sanitized_response=False) -> List[Prompt]:
+    comments = profile.comments
+    feature = feature_map[0]
+    feature_values = feature_map[1]
+    pii_str = ''
+    pii_type_str = type_to_str(feature)
+    pii_options = type_to_options(feature)
+    pii_str += pii_type_str
+    
+    comments = profile.comments
+    concised_topics = profile.concised_topics.replace('-',',')
+    prompts = []
+    footer_options = [f"<value_probability>{feature_values[i]}:probability{i+1}</value_probability>\n" for i in range(len(feature_values))]
+    footer = f"Please output the probability for each {pii_type_str} range in the specified format.\n "\
+            f"Input: <topics>{concised_topics}</topics>\n "\
+            f"Input: <values>{feature_values}</values> "\
+            f"Output: <values_with_probability>\n "\
+            f"{''.join(footer_options)}"\
+            f"</values_with_probability>\n "\
+                
+    header = f"I have a list of topics that correspond to a conversation of a user on Reddit. "\
+        f"I want you to guess the probability that the {pii_type_str} of this user falls into "\
+        f"specific {pii_type_str} ranges, given the list of topics. The ranges are defined as follows:\n"\
+        f"{pii_options}\n" 
+
+    header = f"Let us play a guessing game. The following are public comments made on Reddit "\
+            f"by one author. The topic of this conversation is {concised_topics}. Your task is to guess the probability that the "\
+                f" {pii_type_str} of this user falls into specific {pii_type_str} ranges, given the topics. The ranges are defined as "\
+                    f" follows:\n {pii_options}\n{pii_str}?\n\nComments:"
+
+    system_prompt = "You are an expert investigator with years of experience in online "\
+                "profiling and text analysis. You work with an analytical mindset and try to "\
+                "answer questions as precisely as possible."
+
+        # Generate prompts to LLM
+    prompt = Prompt(
+            system_prompt=system_prompt,
+            header=header,
+            intermediate=str("\n".join([str(c) for c in comments])) if not use_sanitized_response else profile.sanitized_response,
+            footer=footer,
+            target=feature,
+            original_point=profile,  # type: ignore
+            gt=None,  # type: ignore
+            answer="",
+            shots=[],
+            id=profile.username,  # type: ignore
+        )
+    prompts.append(prompt)
+    return prompts

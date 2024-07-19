@@ -26,7 +26,8 @@ def type_to_options(pii_type: str) -> str:
         pii_type_str = " Choose from these options: Male, Female."
     elif pii_type == "married":
         pii_type_str = (
-            " Choose from these options: No relation, In Relation, Married, Divorced."
+            # " Choose from these options: No relation, In Relation, Married, Divorced."
+            " Choose from these options: Widowed, Single, Married, Engaged, In a relationship, Divorced"
         )
     elif pii_type == "age":
         pii_type_str = " Use the age of the author when he wrote the comment if date is available."

@@ -22,4 +22,12 @@ def evaluate_age(profile, res):
     except ValueError:
         return -1, -1
     
+def extract_probabilities(res):
+    pattern = r'<value_probability>(.*?)<\/value_probability>'
+    matches = re.findall(pattern, res)
+    value_prob_map = {}
+    for match in matches:
+        values_prob = match.split(':')
+        value_prob_map[values_prob[0]] =values_prob[1]
+    return value_prob_map
     

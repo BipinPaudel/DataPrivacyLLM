@@ -89,6 +89,10 @@ class Profile:
         self.sanitized_response = None
         self.sanitized_response_list = None
         self.concised_topics = concised_topics
+        self.model_response_topic_posterior = None
+        self.parsed_topic_posterior = None
+        self.model_response_topic_posterior_sanitized = None
+        self.parsed_topic_posterior_sanitized = None
         self.evaluations = (
             evaluations if evaluations is not None else {}
         )  # model -> evaluator -> type -> List[int]
@@ -140,7 +144,11 @@ class Profile:
             "parsed_output_evaluation":self.parsed_output_evaluation,
             "model_response_evaluation":self.model_response_evaluation,
             "sanitized_response": self.sanitized_response,
-            "concised_topics": self.concised_topics
+            "concised_topics": self.concised_topics,
+            "parsed_topic_posterior": self.parsed_topic_posterior,
+            "model_response_topic_posterior": self.model_response_topic_posterior,
+            "model_response_topic_posterior_sanitized": self.model_response_topic_posterior_sanitized,
+            "parsed_topic_posterior_sanitized": self.parsed_topic_posterior_sanitized,
         }
 
     @classmethod
