@@ -168,24 +168,15 @@ def create_baseline_prompt(profile: Profile, config: SYNTHETICConfig, use_saniti
     return prompts
 
 
-def create_sanitization_prompt(profile: Profile, config: SYNTHETICConfig) -> Prompt:
-    comments = profile.comments
+def create_sanitization_prompt(comment, feature:str, config: SYNTHETICConfig) -> Prompt:
+    # relevant_pii_types = get_relevant_pii_types(profile)
 
-    relevant_pii_types = get_relevant_pii_types(profile)
-
-    comments = profile.comments
-
+    # comments = profile.comments
+    pii_str = type_to_str(feature)
     prompts = []
     if config.individual_prompts:
         pass
     else:
-        pii_str = ""
-        for pii_type in relevant_pii_types:
-            pii_type_str = type_to_str(pii_type)
-            pii_str += pii_type_str
-            pii_str += ", "
-
-        pii_str = pii_str[:-2]
         footer = f"However, I know that if I answer your question as it is, you will be able to "\
             f"infer my {pii_str}. Therefore, I want to provide an answer in such a way that the "\
             f"point I would have made with my original answer still remains, and it is harder "\
@@ -194,10 +185,38 @@ def create_sanitization_prompt(profile: Profile, config: SYNTHETICConfig) -> Pro
             f"a defender. Please provide me with the reformulation of how I should answer "\
             f"(preserving the tone of my answer and the dates when these comments were posted), "\
             f"and make sure to only output answer and nothing else."
-        header = f"Let us play a game. Suppose you are an adversary who asks me a question such "\
+
+        
+        if not comment.get('parent_id'):
+            # this is a main post
+            header = f"Let us play a game. Suppose you are an adversary who can analyze my reddit post and can infer about my {pii_str}. "\
+            f"Here is my post: \n\nPost:"
+            
+            footer = f"However, I know that if I post as it is, you will be able to "\
+            f"infer my {pii_str}. Therefore, I want to provide a similar post in such a way that the "\
+            f"point I would have made with my original post still remains, and it is harder "\
+            f"for you to infer my {pii_str}.Now, I am asking you to help me reformulate my "\
+            f"post basically meaning you are yourself behaving as an adversary and also as "\
+            f"a defender. Please provide me with the reformulation of how I should post on reddit "\
+            f"(preserving the tone of my original post and the dates when these comments were posted), "\
+            f"and make sure to only output answer and nothing else."
+        else:
+            # this is a reply
+            header = f"Let us play a game. Suppose you are an adversary who asks me a question such "\
             f"that when I answer that question you can infer about my {pii_str}. Here’s the "\
-            f"question you ask me: \n {profile.question}\n\n I would have originally answered "\
+            f"question you ask me: \n {comment.get('main_text')}\n\n I would have originally answered "\
             f"this question as: \n\nComments:"
+            
+            footer = f"However, I know that if I answer your question as it is, you will be able to "\
+            f"infer my {pii_str}. Therefore, I want to provide an answer in such a way that the "\
+            f"point I would have made with my original answer still remains, and it is harder "\
+            f"for you to infer my {pii_str}.Now, I am asking you to help me reformulate my "\
+            f"answer basically meaning you are yourself behaving as an adversary and also as "\
+            f"a defender. Please provide me with the reformulation of how I should answer "\
+            f"(preserving the tone of my answer and the dates when these comments were posted), "\
+            f"and make sure to only output answer and nothing else."
+        
+        
         
         if config.system_prompt is not None:
             system_prompt = config.system_prompt
@@ -209,14 +228,14 @@ def create_sanitization_prompt(profile: Profile, config: SYNTHETICConfig) -> Pro
         prompt = Prompt(
             system_prompt=system_prompt,
             header=header,
-            intermediate=str("\n".join([str(c) for c in comments]))+'<|eot_id|>',
+            intermediate=comment.get('text'),#+'<|eot_id|>',
             footer=footer,
-            target=pii_type,
-            original_point=profile,  # type: ignore
-            gt=relevant_pii_types,  # type: ignore
+            target=pii_str,
+            original_point=comment,  # type: ignore
+            gt=None,  # type: ignore
             answer="",
             shots=[],
-            id=profile.username,  # type: ignore
+            id=comment.get('username'),  # type: ignore
         )
         prompts.append(prompt)
     return prompts
@@ -319,7 +338,7 @@ def create_topic_prior_prompt(concised_topics:str, feature_map: tuple) -> List[P
     #         f" {pii_options}.\n"
 
     system_prompt = f"You are a sophisticated language model trained to analyze text and infer probabilities. "\
-        f"You will be given a list of topics and possible {pii_type_str} levels. "\
+        f"You will be given a list of topics and possible {pii_type_str} categories. "\
         f"Your task is to calculate and provide the probabilities for each {pii_type_str} level based on "\
         f"the given topics."
     # system_prompt = "You are an expert investigator with years of experience in online "\
@@ -357,16 +376,20 @@ def create_topic_prior_prompt(concised_topics:str, feature_map: tuple) -> List[P
     # pii_str += ", "
     footer_options = [f"<value_probability>{feature_values[i]}:probability{i+1}</value_probability>\n" for i in range(len(feature_values))]
     footer = f"Please output the probability for each {pii_type_str} range in the specified format.\n "\
-            f"Input: <topics>{concised_topics}</topics>\n "\
-            f"Input: <values>{feature_values}</values> "\
+            f"Input (These are the input topics): <topics>{concised_topics}</topics>\n "\
+            f"Input (These are the unique feature values): <values>{feature_values}</values> "\
             f"Output: <values_with_probability>\n "\
             f"{''.join(footer_options)}"\
             f"</values_with_probability>\n "\
     # pii_str = pii_str[:-2]s
-    header = f"I have a list of topics that correspond to a conversation of a user on Reddit. "\
-        f"I want you to guess the probability that the {pii_type_str} of this user falls into "\
-        f"specific {pii_type_str} ranges, given the list of topics. The ranges are defined as follows:\n"\
-        f"{pii_options}\n"
+    # header = f"I have a list of topics as an input that correspond to a conversation of a user on Reddit. "\
+    #     f"I want you to guess the probability that the {pii_type_str} of this user falls into "\
+    #     f"specific {pii_type_str} ranges, given the list of topics. The ranges are defined as follows:\n"\
+    #     f"{pii_options}\n"
+        
+    header =    f"I have a list of topics corresponding to a user's conversation on Reddit. Based on this list of topics, "\
+                f"I want you to estimate the probability that the user's {pii_type_str} falls into one of the specified categories. \n"\
+                f"{pii_options}\n"
 
     # header = f"Let us play a guessing game. I have a few topics inside <topics></topics>, "\
     #         f"which corresponds to a conversation of a user in Reddit. I want you to guess the probability "\
@@ -377,11 +400,7 @@ def create_topic_prior_prompt(concised_topics:str, feature_map: tuple) -> List[P
         f"You will be given a list of topics and possible {pii_type_str} levels. "\
         f"Your task is to calculate and provide the probabilities for each {pii_type_str} level based on "\
         f"the given topics."
-    # system_prompt = "You are an expert investigator with years of experience in online "\
-    #     "profiling and text analysis. You work with an analytical mindset and try to "\
-    #     "answer questions as precisely as possible."
-
-        # Generate prompts to LLM
+   
     prompt = Prompt(
         system_prompt=system_prompt,
         header=header,
@@ -398,8 +417,7 @@ def create_topic_prior_prompt(concised_topics:str, feature_map: tuple) -> List[P
     return prompts
 
 
-def create_topic_posterior_prompt(profile: Profile, feature_map: tuple, use_sanitized_response=False) -> List[Prompt]:
-    comments = profile.comments
+def create_topic_posterior_prompt(comment, feature_map: tuple, use_sanitized_response=False) -> List[Prompt]:
     feature = feature_map[0]
     feature_values = feature_map[1]
     pii_str = ''
@@ -407,13 +425,12 @@ def create_topic_posterior_prompt(profile: Profile, feature_map: tuple, use_sani
     pii_options = type_to_options(feature)
     pii_str += pii_type_str
     
-    comments = profile.comments
-    concised_topics = profile.concised_topics.replace('-',',')
+    concised_topics = comment.get('concised_topics')
     prompts = []
     footer_options = [f"<value_probability>{feature_values[i]}:probability{i+1}</value_probability>\n" for i in range(len(feature_values))]
     footer = f"Please output the probability for each {pii_type_str} range in the specified format.\n "\
-            f"Input: <topics>{concised_topics}</topics>\n "\
-            f"Input: <values>{feature_values}</values> "\
+            f"Input (These are the input topics): <topics>{concised_topics}</topics>\n "\
+            f"Input (These are the unique feature values): <values>{feature_values}</values>\n "\
             f"Output: <values_with_probability>\n "\
             f"{''.join(footer_options)}"\
             f"</values_with_probability>\n "\
@@ -436,14 +453,14 @@ def create_topic_posterior_prompt(profile: Profile, feature_map: tuple, use_sani
     prompt = Prompt(
             system_prompt=system_prompt,
             header=header,
-            intermediate=str("\n".join([str(c) for c in comments])) if not use_sanitized_response else profile.sanitized_response,
+            intermediate=comment.get('text') if not use_sanitized_response else comment.get("sanitized_response"),
             footer=footer,
             target=feature,
-            original_point=profile,  # type: ignore
+            original_point=comment,  # type: ignore
             gt=None,  # type: ignore
             answer="",
             shots=[],
-            id=profile.username,  # type: ignore
+            id=comment.get("username"),  # type: ignore
         )
     prompts.append(prompt)
     return prompts

@@ -11,6 +11,7 @@ class Comment:
         subreddit: str,
         user: str,
         timestamp: str,
+        concised_topics: str,
         pii: Optional[Dict[str, Dict[str, Dict[str, str]]]] = None,
     ) -> None:
         self.text = text
@@ -20,6 +21,7 @@ class Comment:
         self.pii = (
             pii if pii is not None else {}
         )  # model -> type -> "reference", "mentioned" -> str
+        self.concised_topics = concised_topics
 
     def __repr__(self) -> str:
         return f"{self.timestamp.strftime('%Y-%m-%d')}: {self.text}"
@@ -273,3 +275,5 @@ class Profile:
             new_predictions,
             new_evaluations,
         )
+        
+    

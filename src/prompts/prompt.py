@@ -69,7 +69,7 @@ class Prompt:
 
         sys_prompt = self.system_prompt if self.system_prompt else "No system prompt"
 
-        return f"Prompt: {self.id}\n=============\nSystem Prompt\n=============\n{sys_prompt}\n=============\nPrompt\n=============\n{self.get_prompt()}"
+        return f"System Prompt\n=============\n{sys_prompt}\n=============\nPrompt\n=============\n{self.get_prompt()}"
 
 
 @dataclass

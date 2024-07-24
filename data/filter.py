@@ -12,18 +12,14 @@ def pii_type_with_hardness_of_a_profile(profile):
         pii_type_hardness_dict[pii_type] = pii_desc.get('hardness')
     return pii_type_hardness_dict
 
-def get_unique_private_attribute(profiles, feature='income'):
+def get_unique_private_attribute(comments, feature='income'):
     unique_values = set()
-    for profile in profiles:
-        private_key = list(profile.review_pii['synth'].keys())[0]
-        unique_private_value = profile.review_pii['synth'][private_key]['estimate']
-        assert unique_private_value is not None
-        unique_values.add(unique_private_value)
+    for comment in comments:
+        feature_val = comment['reviews']['human'][feature]['estimate']
+        assert feature_val is not None
+        unique_values.add(feature_val)
     
     if feature == 'age':
-        # Initial list of integers from 1 to 100
-        initial_list = list(range(1, 101))
-
         # Generate the list with range strings
         range_list = []
 
@@ -36,6 +32,6 @@ def get_unique_private_attribute(profiles, feature='income'):
         return list(set(range_list))
     return list(unique_values)
 
-def get_topics_for_features(profiles, feature='income'):
-    return list(set([profile.concised_topics for profile in profiles]))
+def get_topics_for_features(comments, feature='income'):
+    return list(set([comment['concised_topics'] for comment in comments]))
         

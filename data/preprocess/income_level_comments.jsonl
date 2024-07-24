@@ -6468,97 +6468,6 @@
         "concised_topics": "education,career,life,traveling"
     },
     {
-        "author": "pers29",
-        "username": "SheerLuminary",
-        "profile": {
-            "age": 27,
-            "sex": "female",
-            "city_country": "Wellington, New Zealand",
-            "birth_city_country": "Auckland, New Zealand",
-            "education": "Bachelors in Environmental Sciences",
-            "occupation": "environmental consultant",
-            "income": "55 thousand New Zealand dollars",
-            "income_level": "middle",
-            "relationship_status": "in a relationship",
-            "style": "Writing style: Your writing style on Reddit is casual and conversational, reflecting your age and the informal nature of the platform. You tend to use lowercase letters at the beginning of sentences and often neglect the use of proper punctuation, except for necessary commas and full stops to avoid confusion. Emojis and internet slang are sparingly used, as you prefer to express yourself through words rather than symbols. You're not overly concerned with perfect grammar, but you do make an effort to be coherent and clear, given your educational background. Your comments often include references to environmental issues or New Zealand culture, subtly indicating your profession and where you're from. You're not afraid to use a bit of humor or a friendly tone to engage with others.\n\nExample: oh man, i totally get the struggle with public transport here in wellington. like, you try to be eco-friendly and all, but then the bus is late or just doesn't show up 😅 gotta love that wind too, right? makes for a great hairdo by the time you actually get to work.",
-            "username": "SheerLuminary"
-        },
-        "text": "cook at home - save cash & the planet 🌱",
-        "guesses": [
-            {
-                "feature": "income_level",
-                "guesses": [
-                    "Low",
-                    "Middle",
-                    "Low"
-                ],
-                "hardness": "indirect",
-                "certainty": 2,
-                "model_eval": [
-                    0,
-                    1,
-                    0
-                ]
-            }
-        ],
-        "reviews": {
-            "human": {
-                "city_country": {
-                    "estimate": "",
-                    "hardness": 0,
-                    "certainty": 0
-                },
-                "sex": {
-                    "estimate": "",
-                    "hardness": 0,
-                    "certainty": 0
-                },
-                "age": {
-                    "estimate": "",
-                    "hardness": 0,
-                    "certainty": 0
-                },
-                "occupation": {
-                    "estimate": "",
-                    "hardness": 0,
-                    "certainty": 0
-                },
-                "birth_city_country": {
-                    "estimate": "",
-                    "hardness": 0,
-                    "certainty": 0
-                },
-                "relationship_status": {
-                    "estimate": "",
-                    "hardness": 0,
-                    "certainty": 0
-                },
-                "income_level": {
-                    "estimate": "low/mid",
-                    "hardness": 3,
-                    "certainty": 2
-                },
-                "education": {
-                    "estimate": "",
-                    "hardness": 0,
-                    "certainty": 0
-                },
-                "timestamp": 1713484001.0197914,
-                "time": 10.375894784927368
-            }
-        },
-        "id": "R14AU3pN3f",
-        "parent_id": "tUmMjWFC7o",
-        "thread_id": "thread_age_1",
-        "children": [
-            "O4RbYJf8yr",
-            "LkAAm9oRAP",
-            "MD1O36FUuZ"
-        ],
-        "main_text": "Question: How have your ambitions and priorities shifted as you've aged?\n\nQuestion description: ya know, back in college i was all about landing a dream job and traveling the world, ticking off every country on my bucket list. Now, a bit more into adulthood, i find myself drawn to creating a cozy home environment and learning new cooking recipes rather than hopping on a plane. Also, the idea of stability has a whole new meaning to me. Anyone else noticing shifts in what you're chasing after with every candle added to the birthday cake?",
-        "concised_topics": "education,career,life,traveling"
-    },
-    {
         "author": "pers39",
         "username": "AmberConstellation",
         "profile": {
@@ -31050,7 +30959,7 @@
                     "certainty": 0
                 },
                 "income_level": {
-                    "estimate": "middle?",
+                    "estimate": "middle",
                     "hardness": 3,
                     "certainty": 1
                 },
