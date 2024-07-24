@@ -137,3 +137,8 @@
 2024-07-24 12:26:10,713 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-70B-Instruct/resolve/main/generation_config.json HTTP/1.1" 200 0
 2024-07-24 12:26:10,947 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-70B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
 2024-07-24 12:26:11,345 - INFO - sex: Private values: ['female', 'male'] Topics: ['survival,dystopian,practical', 'hobbies,plants,snacks', 'age,milestone', 'creative,tools,work', 'relationships,personal life', 'home,comfort,cultures,settling,concept', 'Life experience,finances,Pandemic', 'gender,roles,stereotypes', 'buildings,motion,dwellers', 'finances', 'ghosts,urban legends', 'Urban,Spots,Atmosphere', 'relationships,activities,families', 'tradition,peculiar,vegetable', 'education,career,life,traveling', 'transport,commuting,city', 'weather,productivity,mood', 'expense,counters,bean']
+2024-07-24 12:54:50,630 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-07-24 12:54:50,755 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3-70B-Instruct/resolve/main/config.json HTTP/1.1" 200 0
+2024-07-24 12:55:15,560 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-07-24 12:55:15,648 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-70B-Instruct/resolve/main/config.json HTTP/1.1" 403 0
+2024-07-24 12:55:15,741 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-70B-Instruct/resolve/main/config.json HTTP/1.1" 403 0

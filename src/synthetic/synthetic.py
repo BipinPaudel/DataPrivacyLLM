@@ -157,8 +157,6 @@ def run_topic_prior_experiment(cfg, feature, hardness):
 
     prompts = []
     for topic in topics_for_feature:
-        if topic != 'finances':
-            continue
         prompt = create_topic_prior_prompt(topic, (feature, private_values))
         prompts.append(prompt[0])
     model = get_model(cfg.gen_model)
@@ -175,7 +173,7 @@ def run_topic_prior_experiment(cfg, feature, hardness):
         value_map = extract_probabilities(res[1])
         topic_values_prob.append({'topic': topics_for_feature[topic_counter], 'values': value_map, 'response': res[1]})
         topic_counter += 1
-        filename = f"results/topic_prior2_{feature}_{''.join(map(str, hardness))}_{cfg.gen_model.name.split('/')[1]}.jsonl"
+        filename = f"results/topic_prior_{feature}_{''.join(map(str, hardness))}_{cfg.gen_model.name.split('/')[1]}.jsonl"
         write_json_lists_to_file(filename, topic_values_prob)
 
 def run_topic_posterior_experiment(cfg, feature, hardness):

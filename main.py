@@ -18,7 +18,7 @@ if __name__ == "__main__":
     env = "configs/reddit_llama2_7b.yaml"
     env = "configs/reddit_llama3_8b.yaml"
     env = "configs/reddit_llama3_70b.yaml"
-    # env = "configs/reddit_llama3.1_70b.yaml"
+    env = "configs/reddit_llama3.1_70b.yaml"
     cfg = read_config_from_yaml(env)
     
     print('Configuration setup done')
